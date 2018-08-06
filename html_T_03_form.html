@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        form 튜토리얼
+    </head>
+    <body>
+<!-- 회원가입 양식 등 내용을 적을 수 있는 양식이 form, 서버로 데이터를 전송하기 위한 태그임
+    form의 옵션에는 action(데이터가 저장될 경로,#에 들어감), method(전송되는 방식, get은 url뒤에 붙어서 감{ex)www.ddd.com/ㅎㅎㅎ} post는 암호화되어 감 -->
+        <form action="#" method="get">
+<!-- form  안이 내용은 input을 통해 기록되고, type에는 text, password는 암호라 *로 표시되고, 각자 이름을 지정하고 size는 입력칸의 크기가 됨.
+radio는 1개만 고를 수 있는 땡땡이선택지, select는 여러개 고르는 체크선택지, 안의 내용은 option으로 이루어짐. multiple 옵션을 주면 한번에 선택지 다 보임
+textarea는 큰 텍스트 칸이며, row 와 cols로 칸을 정할 수 있음. input type="submit"을 선택 시 제출 버튼 생김.
+-->
+            이름 : <input type="text" name="uname" /><br />
+            아이디 : <input type="text" name="uid" /><br />
+            비밀번호 : <input type="password" name="upw" /><br />
+            연락처 : <input type="text" name="uphone1" size="5" /> - 
+                    <input type="text" name="uphone2" size="5" /> - 
+                    <input type="text" name="uphone3" size="5" /><br />
+            사진 : <input type="file" name="upic"/> <br />
+            성별구분 : <input type="radio" name="gender" value="m">남, 
+                     <input type="radio" name="gender" value="w">여 <br />
+            사용언어 : <input type="checkbox" name="lan" value="kor" checked="checked" />한글, 
+                   <input type="checkbox" name="lan" value="eng" />영어, 
+                   <input type="checkbox" name="lan" value="jap" />일어, 
+                   <input type="checkbox" name="lan" value="chi" />중국어<br />
+            자기소개 : <textarea rows="5" cols="20">간단하게 입력하세요.</textarea><br />
+            국적 : <select>
+                 <option>KOREA</option>
+                 <option>USA</option>
+                 <option>JAPAN</option>
+                 <option>CHINA</option>   
+               </select><br />
+            좋아하는음식 : <select multiple="multiple">
+                <option>김치</option>
+                <option>불고기</option>
+                <option>파전</option>
+                <option>비빔밥</option>
+        </select><br />
+        <input type="submit"/>
+    </form>
+    </body>
+</html>
